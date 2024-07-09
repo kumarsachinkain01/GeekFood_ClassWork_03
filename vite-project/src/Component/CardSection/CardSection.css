@@ -1,0 +1,75 @@
+/* Global Styles */
+body {
+  margin: 0;
+  font-family: sans-serif;
+}
+
+/* Card Section Styles */
+.card-section {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 1.5rem;
+  padding: 2rem;
+}
+
+.card {
+  background: #fff;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  padding: 1.5rem;
+  max-width: calc(33.333% - 1rem);
+  flex: 1 1 calc(33.333% - 1rem);
+  box-sizing: border-box;
+  transition: transform 0.3s ease-in-out;
+}
+
+.card:hover {
+  transform: translateY(-10px);
+}
+
+.card p {
+  margin: 0 0 1rem 0;
+}
+
+.card-footer {
+  display: flex;
+  align-items: center;
+  margin-top: 1rem;
+}
+
+.author-img {
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  margin-right: 1rem;
+}
+
+.author-name {
+  font-weight: bold;
+  margin: 0;
+}
+
+.author-role {
+  color: #666;
+  margin: 0;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  .card {
+    max-width: calc(50% - 1rem);
+    flex: 1 1 calc(50% - 1rem);
+  }
+}
+
+@media (max-width: 480px) {
+  .card {
+    max-width: 100%;
+    flex: 1 1 100%;
+  }
+
+  .card-section {
+    padding: 1rem;
+  }
+}

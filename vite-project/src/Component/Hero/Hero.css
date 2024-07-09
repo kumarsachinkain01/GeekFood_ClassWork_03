@@ -1,0 +1,109 @@
+/* Global Styles */
+body {
+  margin: 0;
+  font-family: sans-serif;
+}
+
+/* Hero Section Styles */
+.hero {
+  background-image: url('https://images.unsplash.com/photo-1604014237800-1c9102c219da?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1770&q=80');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  padding: 0 2rem;
+}
+
+.hero-content {
+  max-width: 600px;
+  color: white;
+}
+
+.hero h1 {
+  font-size: 3rem;
+  margin: 0.5rem 0;
+  color: #0f1231;
+}
+
+.hero h1 span {
+  color: #c2185b;
+  font-weight: bold;
+}
+
+.hero p {
+  font-size: 1.5rem;
+  margin: 1rem 0;
+}
+
+.hero-buttons {
+  display: flex;
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+.hero-buttons button {
+  outline: none;
+  padding: 0.7rem 1.5rem;
+  border: none;
+  border-radius: 5px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.hero-buttons .search-now {
+  background-color: #c2185b;
+  color: white;
+}
+
+.hero-buttons .search-now:hover {
+  background-color: #a4154b;
+}
+
+.hero-buttons .know-more {
+  background-color: white;
+  border: 2px solid #c2185b;
+  color: #c2185b;
+}
+
+.hero-buttons .know-more:hover {
+  background-color: #c2185b;
+  color: white;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  .hero-content {
+    max-width: 100%;
+  }
+
+  .hero h1 {
+    font-size: 2.5rem;
+  }
+
+  .hero p {
+    font-size: 1.2rem;
+  }
+
+  .hero-buttons {
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+
+  .hero-buttons button {
+    width: 100%;
+    text-align: center;
+  }
+}
+
+@media (max-width: 480px) {
+  .hero h1 {
+    font-size: 2rem;
+  }
+
+  .hero p {
+    font-size: 1rem;
+  }
+}
